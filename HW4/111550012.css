@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+nav{
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #769fc3;
+}
+svg {
+    font: 12px sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+.container {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px;
+    position: absolute;
+}
+
+.grid line {
+    stroke: lightgray; /* You can replace 'lightgray' with a specific hex color code for finer control */
+    stroke-width: 0.5px; /* Adjust thickness as necessary */
+    opacity: 0.3; /* Increase this for lighter gridlines */
+}
+
+.axis line {
+    stroke: none; /* Hide axis lines if you want to show only gridlines */
+}
+.axis path {
+    display: none;
+}
+
+.cell text {
+    font-weight: bold;
+    text-transform: capitalize;
+    fill: black;
+}
+
+.frame {
+    fill: none;
+    stroke: #aaa;
+}
+
+circle {
+    fill-opacity: 0.7;
+    transition: fill-opacity 0.2s ease;
+}
+
+circle.hidden {
+    fill: #ccc !important;
+}
+rect {
+    transition: fill 0.3s ease;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    overflow-y: auto;
+}
+
+        .extent {
+            fill: #000;
+            fill-opacity: .125;
+            stroke: #fff;
+        }
+        .class-select {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .class-select label {
+            margin-right: 15px;
+            font-size: 16px;
+        }
+footer {
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+.box1 {
+    grid-column: 2 / 3;
+}
+
+.box2 {
+    grid-column: 3 / 4;
+}
+
+.box3 {
+    grid-column: 4 / 6;
+}

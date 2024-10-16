@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Dataset Parallel Coordinates Plot</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script defer src="./111550012.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            font-style: bold;
+            font-size: 40px;
+            padding: 20px;
+            background-color: #c2e0ee;
+        }
+
+        .axis {
+            font-size: 12px;
+        }
+
+        .axis line,
+        .axis path {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .axis-label {
+            font-size: 14px;
+        }
+
+        svg {
+            padding: 20px;
+        }
+
+        /* Styling for poly-lines */
+        .polyline {
+            fill: none;
+            opacity: 0.5;
+            stroke-width: 1.5px;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Hover effect for lines */
+        .polyline:hover {
+            opacity: 1;
+            stroke-width: 3px;
+        }
+
+        /* Tooltip styling */
+        .tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+            display: none;
+        }
+
+        /* Styling for the legend */
+        .legend-item {
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        }
+
+        .legend-item rect {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+        }
+
+        footer {
+            display: grid;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+            grid-template-columns: repeat(7, 1fr);
+            grid-auto-rows: 20px;
+        }
+
+        .box1 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .box2 {
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .box3 {
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Iris Dataset Parallel Coordinates Plot</nav>
+    <svg width="1000" height="800"></svg>
+
+    <!-- Tooltip for hover details -->
+    <div class="tooltip"></div>
+    <!-- Container for the legend -->
+    <div id="legend-container" style="float: right; padding: 20px;"></div>
+
+</body>
+<footer>
+    <div class="box1">Author: Ray Cheng </div>
+    <div class="box2">Date: 09/18/2024</div>
+    <div class="box3">Contact: raycheng.cs11@nycu.edu.tw </div>
+</footer>
+
+</html>

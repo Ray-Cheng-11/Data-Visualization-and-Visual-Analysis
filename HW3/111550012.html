@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correlation Matrix with Abalone Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .matrix-cell text {
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+
+        .matrix-cell rect {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+
+        .legend rect {
+            height: 20px;
+        }
+
+        .legend text {
+            text-anchor: middle;
+            alignment-baseline: middle;
+            font-size: 14px;
+        }
+
+        #cm {
+            margin: 10 auto;
+        }
+
+        .nav-link {
+            cursor: pointer;
+        }
+
+        .tooltip {
+            position: absolute;
+            opacity: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 12px;
+            pointer-events: none;
+        }
+
+        footer {
+            display: grid;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+            grid-template-columns: repeat(7, 1fr);
+            grid-auto-rows: 20px;
+        }
+
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .box1 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .box2 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .box3 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+    </style>
+</head>
+<body class="container text-center">
+    <!-- Navbar for gender selection -->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark mb-7">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HW3 - Correlation Matrix</a>
+            <div class="navbar-nav">
+                <a class="nav-link active" id="nav-male" data-sex="male">Male</a>
+                <a class="nav-link" id="nav-female" data-sex="female">Female</a>
+                <a class="nav-link" id="nav-infant" data-sex="infant">Infant</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Graph and legend -->
+    <div id="cm"></div>
+    <div class="legend"></div>
+
+    <!-- D3.js and math.js libraries -->
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    <script src="111550012.js"></script>
+</body>
+<footer>
+    <div class="box1">Author: 鄭睿宏</div>
+    <div class="box2">Date: 09/26/2024</div>
+    <div class="box3">Contact: raycheng.cs11@nycu.edu.tw</div>
+</footer>
+</html>

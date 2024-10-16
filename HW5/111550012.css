@@ -1,0 +1,117 @@
+        nav{
+            width: 98%;
+            position: absolute;
+            background-color: #5B7C9C; 
+            padding: 15px; 
+            color: white; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #333;
+        }
+        svg {
+            font: 10px sans-serif;
+            padding: 30px;
+            margin-left: 5%;
+        }
+        .axis, .frame {
+            shape-rendering: crispEdges;
+        }
+        .axis line {
+            stroke: #ddd;
+        }
+        .axis path {
+            display: none;
+        }
+        .cell text {
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .frame {
+            fill: none;
+            stroke: #aaa;
+        }
+        circle {
+            fill-opacity: 0.7;
+        }
+        circle.hidden {
+            fill: #ccc !important;
+        }
+        .bar-group rect {
+            transition: width 1.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+                        x 1.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+                        opacity 0.5s ease;
+        }
+
+        .bar-group {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .bar-group.visible {
+            opacity: 1;
+        }
+        .extent {
+            fill: #000;
+            fill-opacity: 0.125;
+            stroke: #fff;
+        }
+        .group-Teaching {
+            fill: DodgerBlue;
+        }
+        .group-Research {
+            fill: purple;
+        }
+        .group-Citations {
+            fill: green;
+        }
+        .group-International_outlook {
+            fill: red;
+        }
+        .group-Industry_income {
+            fill: orange;
+        }
+        .selection {
+            background: #5B7C9C;
+            color: #fff;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+
+        }
+        .legend {
+            position: fixed;
+            right: 20px;
+            top: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+        .container {
+            display: flex; 
+            justify-content: space-between; 
+            margin-right: 8%; 
+            margin-left: 5%;
+        }

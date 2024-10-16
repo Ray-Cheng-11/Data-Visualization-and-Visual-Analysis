@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Bar Charts</title>
+    <link rel="stylesheet" href="./111550012.css">
+</head>
+<body>
+    <nav><a href="111550012.html">Stacked Bar Charts</a>
+        <div>
+            <select class="selection" id="X">
+                <option selected disabled>Select Sorting Methodology</option>
+                <option value="Overall" selected>Overall</option>
+                <option value="Teaching">Teaching</option>
+                <option value="Research">Research</option>
+                <option value="Citations">Citations</option>
+                <option value="Industry_income">Industry Income</option>
+                <option value="International_outlook">International Outlook</option>
+            </select> 
+            <select class="selection" id="Y">
+                <option selected disabled>Select Sorting Order</option>
+                <option value="descending" selected>Descending</option>
+                <option value="ascending">Ascending</option>
+            </select>
+            <select class="selection" id="dataLimit">
+                <option selected disabled>Select Displaying Item</option>
+                <option value="2680" selected>All</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+                <option value="250">250</option>
+            </select>
+        </div>
+        <!-- <button class="button" id="btn" >Confirm</button> -->
+    </nav>
+
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <script src="./111550012.js"></script>
+</body>
+<footer id="footer" >
+    <div class="container">
+        <div>Author: 鄭睿宏</div>
+        <div>Date: 10/06/2024</div>
+        <div>Contact: raycheng.cs11@nycu.edu.tw</div>
+    </div>
+</footer>
+</html>
