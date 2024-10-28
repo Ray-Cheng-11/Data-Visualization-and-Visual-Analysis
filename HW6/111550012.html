@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThemeRiver of House Property Sales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./111550012.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <h1>ThemeRiver of House Property Sales</h1>
+        <a href="https://www.kaggle.com/datasets/htagholdings/property-sales/" target="_blank">Data Source</a>
+    </nav>
+
+    <div class="row my-3">
+        <!-- Create a div where the graph will take place -->
+        <div id="my_dataviz" class="col-12 col-md-8">
+            <p>💡 Use pinch gestures to zoom in and out</p>
+        </div>
+    
+        <div class="m-auto col-12 col-md-3">
+            <p>💡 Drag to reorder streams, click to hide/show..</p>
+            <div id="blocks" class="list-group col draggable">
+            </div>
+        </div>
+    </div>
+    <footer id="footer" >
+        <div class="container">
+            <div>Author: 鄭睿宏</div>
+            <div>Date: 10/18/2024</div>
+            <div>Contact: raycheng.cs11@nycu.edu.tw</div>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v6.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
+<!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="./111550012.js"></script>
+
+</html>

@@ -1,0 +1,75 @@
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    padding: 5px;
+    font: 12px sans-serif;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+}
+.tooltip-line {
+    stroke: black;
+    stroke-width: 1px;
+    stroke-dasharray: 3,3;
+    opacity: 0;
+}
+nav {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+nav h1 {
+    margin: 0;
+    display: inline-block;
+}
+nav a {
+    margin-left: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+}
+.selection {
+    background: #95a7a1;
+    color: #fff;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    transition: background-color 0.3s ease;
+}
+.selection:hover {
+    background: #3E5A73;
+}
+.selection:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+footer {
+    display: absolute;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-right: 5%; 
+    margin-left: 5%;
+}
+

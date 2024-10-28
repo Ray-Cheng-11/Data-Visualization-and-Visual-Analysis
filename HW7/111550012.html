@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horizon Chart</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="111550012.css">
+    </head>
+    <body>
+        <nav>
+            <h1>Horizon Chart</h1>
+            <a href="https://www.kaggle.com/datasets/bappekim/air-pollution-in-seoul" target="_blank">Data Source</a>
+            <div>
+                <label for="pollutant-select">Choose a pollutant:</label>
+                <select class="selection" id="pollutant-select">
+                    <option value="SO2">SO2</option>
+                    <option value="NO2">NO2</option>
+                    <option value="O3">O3</option>
+                    <option value="CO">CO</option>
+                    <option value="PM10">PM10</option>
+                    <option value="PM2.5">PM2.5</option>
+                </select>
+                <label for="year-select">Choose a year:</label>
+                <select class="selection" id="year-select">
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="numBands-select">Choose number of bands:</label>
+                <select class="selection" id="numBands-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </nav>
+        
+        <svg width="1000" height="4500"></svg>
+        <footer id="footer" >
+            <div class="container">
+                <div>Author: 鄭睿宏</div>
+                <div>Date: 10/18/2024</div>
+                <div>Contact: raycheng.cs11@nycu.edu.tw</div>
+            </div>
+        </footer>
+        <script src="https://d3js.org/d3.v7.js"></script>
+        <script src="https://unpkg.com/d3@5.9.2/dist/d3.min.js"></script>
+        <script src="./111550012.js"></script>
+    </body>
+</html>

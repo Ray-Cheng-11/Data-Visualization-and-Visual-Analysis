@@ -1,0 +1,51 @@
+.nav {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.nav h1 {
+    margin: 0;
+}
+.nav a {
+    margin-left: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.draggable {
+    cursor: pointer;
+    -webkit-user-drag: element;
+}
+.legend-item {
+    cursor: pointer;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    -webkit-user-drag: element;
+
+}
+p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 1rem 0;
+}
+footer {
+    display: absolute;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-right: 8%; 
+    margin-left: 5%;
+}
