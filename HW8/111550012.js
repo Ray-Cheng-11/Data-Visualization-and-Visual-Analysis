@@ -723,8 +723,8 @@ d3.sankey = function () {
         });
     };
 
-    // const data_path = 'car.data';
-    const data_path = 'http://vis.lab.djosix.com:2024/data/car.data';
+    const data_path = 'car.data';
+    // const data_path = 'http://vis.lab.djosix.com:2024/data/car.data';
 
     d3$1.text(data_path).then(function (r) {
         var loadedData = 'buying,maintenance,doors,persons,luggage boot,safety\n' + r;

@@ -1,5 +1,5 @@
-const data_path = "http://vis.lab.djosix.com:2024/data/air-pollution.csv"
-// const data_path = "./air-pollution.csv"
+// const data_path = "http://vis.lab.djosix.com:2024/data/air-pollution.csv"
+const data_path = "./air-pollution.csv"
 
 // Set up SVG dimensions and margins
 const svg = d3.select('svg');
